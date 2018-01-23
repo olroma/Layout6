@@ -1,0 +1,57 @@
+.appeal {
+  margin-top: 455px;
+
+  .container__title {
+    &::after {
+      background: var(--primary);
+    }
+  }
+
+  &_bottom {
+    margin-top: 85px;
+
+    button {
+      float: right;
+      margin-top: -5px;
+      margin-right: 25px;
+    }
+  }
+
+  &__description {
+    padding-left: 185px;
+  }
+
+  &__list {
+    display: flex;
+    
+    img {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    size: 300px 385px;
+    background: white;
+    font-size: 18px;
+    padding-left: 40px;
+    margin-right: 25px;
+  }
+
+  &__title-item {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  &__description-item {
+    width: 200px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  &__text {
+    color: var(--gray);
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

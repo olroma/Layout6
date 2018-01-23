@@ -36,7 +36,7 @@ ul {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-  width: 945px;
+  width: 930px;
   height: 425px;
   position: absolute;
   top: 0;
@@ -77,6 +77,70 @@ ul {
   content: '- ';
   color: #4d636c;
   opacity: 0.3;
+}
+.appeal {
+  margin-top: 455px;
+}
+.appeal .container__title::after {
+  background: #65a9df;
+}
+.appeal_bottom {
+    margin-top: 85px;
+  }
+.appeal_bottom button {
+      float: right;
+      margin-top: -5px;
+      margin-right: 25px;
+    }
+.appeal__description {
+    padding-left: 185px;
+  }
+.appeal__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+.appeal__list img {
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+.appeal__item {
+    width: 300px;
+    height: 385px;
+    background: white;
+    font-size: 18px;
+    padding-left: 40px;
+    margin-right: 25px;
+  }
+.appeal__title-item {
+    color: #65a9df;
+    font-weight: bold;
+  }
+.appeal__description-item {
+    width: 200px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+.appeal__text {
+    color: #4d636c;
+    font-size: 30px;
+    font-weight: bold;
+  }
+.button:focus {
+  outline: none;
+}
+.button {
+  width: 215px;
+  height: 60px;
+  border: 0;
+  border-radius: 30px;
+  -webkit-box-shadow: 3px 2px 7px rgba(114, 122, 161, .35);
+          box-shadow: 3px 2px 7px rgba(114, 122, 161, .35);
+  background-color: #ffffff;
+  color: #65a9df;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
 }
 .common {
   margin-top: 320px;

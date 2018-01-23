@@ -6,7 +6,7 @@
     > .row {
       &:nth-child(2) {
         @apply --centerV;
-        size: 945px 425px;
+        size: 930px 425px;
         position: absolute;
         top: 0;
         margin-left: 185px;
