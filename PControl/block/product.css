@@ -1,0 +1,37 @@
+.product {
+  @apply --centerH;
+  flex-direction: column;
+  height: 375px;
+
+  .container__title {
+    &::after {
+      background: var(--green);
+    }
+  }
+
+  .container {
+    .row {
+      &:nth-child(2) {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__row-title {
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    padding-left: 180px;
+  }
+
+  &__list {
+    display: flex;
+
+    li {
+      &:nth-child(n+2) {
+        margin-left: 70px;
+      }
+    }
+  }
+}
