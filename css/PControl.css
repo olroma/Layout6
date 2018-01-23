@@ -162,6 +162,60 @@ ul {
       font-size: 18px;
       line-height: 28px;
     }
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 205px;
+  background: url('../img/contact-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact input {
+  color: #4d636c;
+  font-size: 30px;
+  font-weight: bold
+  }
+.contact input:focus {
+  outline: none;
+}
+.contact input {
+  width: 835px;
+  height: 65px;
+  border: 0;
+  border-bottom: 1px solid #4d636c;
+  background: none;
+}
+.contact input::-webkit-input-placeholder {
+  color: #4d636c;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact input:-ms-input-placeholder {
+  color: #4d636c;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact input::-ms-input-placeholder {
+  color: #4d636c;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact input::placeholder {
+  color: #4d636c;
+  font-size: 30px;
+  font-weight: bold;
+}
+.contact button {
+    margin-left: 40px;
+  }
 .header {
   background: white;
   height: 72px;

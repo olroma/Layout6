@@ -1,0 +1,32 @@
+:root {
+  --input-text: {
+    color: var(--gray);
+    font-size: 30px;
+    font-weight: bold; 
+  }
+}
+
+.contact {
+  @apply --center;
+  height: 205px;
+  background: url('../img/contact-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  input {
+    @apply --input-text;
+    @apply --disableOutline;
+    size: 835px 65px;
+    border: 0;
+    border-bottom: 1px solid var(--gray);
+    background: none;
+
+    &::placeholder {
+      @apply --input-text;
+    }
+  }
+
+  button {
+    margin-left: 40px;
+  }
+}
