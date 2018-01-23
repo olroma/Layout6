@@ -32,19 +32,30 @@
   }
 
   --title: {
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
---link: {
-  text-decoration: underline;
-  color: var(--orange);
-  font-weight: bold;
-}
+  --underline: {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      size: 70px 3px;
+      bottom: -20px;
+      left: 0;
+    }
+  }
 
-  @property setGridCell row column {
+  --link: {
+    text-decoration: underline;
+    color: var(--orange);
+    font-weight: bold;
+  }
+
+  @property gridCell row column {
     grid-column: +column;
     grid-row: +row; 
   }
