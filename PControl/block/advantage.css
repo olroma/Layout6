@@ -1,0 +1,56 @@
+.advantage {
+  position: relative;
+  margin-top: 100px;
+
+  .container {
+    > .row {
+      &:nth-child(2) {
+        @apply --centerV;
+        size: 945px 425px;
+        position: absolute;
+        top: 0;
+        margin-left: 185px;
+        margin-top: -45px;
+        background: white;
+
+        > div {
+          @apply --centerH;
+        }
+      }
+    }
+  }
+
+  .container__title {
+    &::after {
+      background: var(--green);
+    }
+  }
+
+  &__description {
+    width: 625px;
+  }
+
+  &__list {
+    font-size: 20px;
+    margin-left: 10px;
+
+    &-header {
+      font-size: 18px;
+      color: var(--green);
+      font-weight: bold;
+    }
+
+    li {
+      position: relative;
+      margin-top: 30px;
+
+      &::before {
+        position: absolute;
+        left: -10px;
+        content: '- ';
+        color: var(--gray);
+        opacity: 0.3;
+      }
+    }
+  }
+}
