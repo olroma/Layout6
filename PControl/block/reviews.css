@@ -1,4 +1,6 @@
 .reviews {
+  @apply --centerH;
+  flex-direction: column;
   height: 595px;
   background: url('../img/review/review-background.png');
   background-repeat: no-repeat;
@@ -12,5 +14,35 @@
 
   &__description {
     padding-left: 185px;
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 15px;
+
+    li {
+      size: 460px 385px;
+      background: white;
+      font-size: 18px;
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      &:nth-child(n+2) {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &__title-item {
+    margin-left: 10px;
+    color: var(--orange);
+    font-weight: bold;
+  }
+
+  &__description-item {
+    width: 310px;
+    margin-top: 25px;
+    margin-left: 65px;
   }
 }
