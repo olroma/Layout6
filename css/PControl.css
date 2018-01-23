@@ -13,16 +13,37 @@ ul {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-    margin-left: 80px;
+  color: #4d636c;
+  position: relative;
   }
-.container-fluid.promo > .row:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+.container__title::after {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 3px;
+  bottom: -20px;
+  left: 0;
 }
+.common {
+  margin-top: 320px;
+}
+.common .container__title::after {
+  background: #ff8d3f;
+}
+.common__row-title {
+    padding-bottom: 15px;
+  }
+.common__description {
+    padding-left: 185px;
+  }
+.common__description strong {
+      color: #ff8d3f;
+    }
+.common__description p {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 28px;
+    }
 .header {
   background: white;
   height: 72px;

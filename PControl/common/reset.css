@@ -14,14 +14,6 @@ ul {
 .container {
   &__title {
     @apply --title;
-    margin-left: 80px;
-  }
-
-  &-fluid.promo {
-    > .row {
-      &:nth-child(1) {
-        @apply --centerH;
-      }
-    }
+    @apply --underline;
   }
 }
