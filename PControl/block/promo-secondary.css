@@ -1,0 +1,29 @@
+.promo-secondary {
+  height: 855px;
+  margin-top: 90px;
+  position: relative;
+  background: url('../img/mockup/mockup-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__mockup {
+    position: absolute;
+    top: 110px;
+    right: 0;
+  }
+
+  &__list {
+    margin-top: 120px;
+    size: 445px 185px;
+    font-size: 18px;
+
+    strong {
+      color:var(--purple);
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 15px;
+    }
+  }
+}

@@ -271,6 +271,9 @@ ul {
     line-height: 72px;
     margin-right: 80px;
   }
+.news {
+  
+}
 .product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +307,32 @@ ul {
 .product__list li:nth-child(n+2) {
   margin-left: 70px;
 }
+.promo-secondary {
+  height: 855px;
+  margin-top: 90px;
+  position: relative;
+  background: url('../img/mockup/mockup-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.promo-secondary__mockup {
+    position: absolute;
+    top: 110px;
+    right: 0;
+  }
+.promo-secondary__list {
+    margin-top: 120px;
+    width: 445px;
+    height: 185px;
+    font-size: 18px;
+  }
+.promo-secondary__list strong {
+      color:#67509c;
+      font-weight: bold;
+    }
+.promo-secondary__list p {
+      margin-top: 15px;
+    }
 .place {
   position: relative;
 }
@@ -476,6 +505,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 595px;
+  margin-top: 180px;
   background: url('../img/review/review-background.png');
   background-repeat: no-repeat;
   background-size: cover;

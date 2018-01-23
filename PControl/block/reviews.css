@@ -2,6 +2,7 @@
   @apply --centerH;
   flex-direction: column;
   height: 595px;
+  margin-top: 180px;
   background: url('../img/review/review-background.png');
   background-repeat: no-repeat;
   background-size: cover;
