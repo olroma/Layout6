@@ -272,7 +272,10 @@ ul {
     margin-right: 80px;
   }
 .news {
-  
+  margin-top: 80px;
+}
+.news .container__title::after {
+  background: #65a9df;
 }
 .product {
   display: -webkit-box;
