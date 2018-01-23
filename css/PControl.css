@@ -218,6 +218,42 @@ ul {
 .contact button {
     margin-left: 40px;
   }
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  background: #4d636c;
+}
+.footer p {
+    color: white;
+    font-size: 18px;
+  }
+.footer__adress:nth-child(1) {
+  margin-bottom: 0;
+}
+.footer__contact {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+.footer__coop {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+.footer__telephone {
+    font-weight: bold;
+  }
+.footer__left strong {
+      font-weight: bold;
+      color: white;
+    }
+.footer__middle strong {
+      color: #65a9df;
+      font-weight: bold;
+    }
 .header {
   background: white;
   height: 72px;

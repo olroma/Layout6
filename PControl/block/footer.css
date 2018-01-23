@@ -1,0 +1,44 @@
+.footer {
+  @apply --centerV;
+  height: 200px;
+  background: var(--gray);
+
+  p {
+    color: white;
+    font-size: 18px;
+  }
+
+  &__adress {
+    &:nth-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__contact {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  &__coop {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+
+  &__telephone {
+    font-weight: bold;
+  }
+
+  &__left {
+    strong {
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  &__middle {
+    strong {
+      color: var(--primary);
+      font-weight: bold;
+    }
+  }
+}
