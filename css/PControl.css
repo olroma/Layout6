@@ -393,3 +393,15 @@ ul {
       font-size: 18px;
       margin-top: 15px;
 }
+.reviews {
+  height: 595px;
+  background: url('../img/review/review-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews .container__title::after {
+  background: #ff8d3f;
+}
+.reviews__description {
+    padding-left: 185px;
+  }

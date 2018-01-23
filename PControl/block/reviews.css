@@ -1,0 +1,16 @@
+.reviews {
+  height: 595px;
+  background: url('../img/review/review-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container__title {
+    &::after {
+      background: var(--orange);
+    }
+  }
+
+  &__description {
+    padding-left: 185px;
+  }
+}
