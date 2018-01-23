@@ -1,0 +1,28 @@
+{
+  "name": "pla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "gulp-install": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "postcss-assets": "^5.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-define-property": "^0.5.0",
+    "postcss-easy-import": "^3.0.0",
+    "precss": "^3.0.0"
+  },
+  "dependencies": {
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "postcss-bem": "^0.4.1",
+    "postcss-nesting": "^4.2.1"
+  }
+}

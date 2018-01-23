@@ -1,0 +1,64 @@
+:root {
+  --centerH: {
+    display: flex;
+    justify-content: center;
+  }
+
+  --centerV: {
+    display: flex;
+    align-items: center;
+  }
+
+  --center: {
+    @apply --centerH;
+    @apply --centerV;
+  }
+
+  --absoluteReset: {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  --disableOutline: {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  --standart-list: {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  --title: {
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+  @property setGridCell row column {
+    grid-column: +column;
+    grid-row: +row; 
+  }
+
+  @property size width height {
+    width: +width;
+    height: +height; 
+  }
+
+  @property size size {
+    width: +size;
+    height: +size;
+  }
+
+  @property animation-standard time {
+    transition: all +time ease-out;
+  }
+}
+
+@custom-media --md (max-width: 991px);
+@custom-media --sm (max-width: 767px);

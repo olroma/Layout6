@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+}
+
+* {
+  font-family: 'PT Sans';
+  color: var(--black);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  &__title {
+    @apply --title;
+    margin-left: 80px;
+  }
+
+  &-fluid.promo {
+    > .row {
+      &:nth-child(1) {
+        @apply --centerH;
+      }
+    }
+  }
+}

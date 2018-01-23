@@ -1,0 +1,5 @@
+@import 'PControl.css';
+
+html, body {
+  min-width: 320px;
+}
