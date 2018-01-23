@@ -33,11 +33,15 @@
 
   --title: {
   cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 30px;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+--link: {
+  text-decoration: underline;
+  color: var(--orange);
+  font-weight: bold;
 }
 
   @property setGridCell row column {

@@ -1,0 +1,21 @@
+:root {
+  --header-height: 72px;
+}
+
+.header {
+  background: white;
+  height: var(--header-height);
+
+  &__logo {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+
+  &__sign {
+    @apply --link;
+    font-size: 18px;
+    float: right;
+    line-height: var(--header-height);
+    margin-right: 80px;
+  }
+}
