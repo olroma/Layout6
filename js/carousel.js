@@ -4,4 +4,10 @@ $(document).ready(function(){
     nav: true,
     dotClass: "dot"
   });
+
+  $('.promo-secondary__slider').owlCarousel({
+    items: 1,
+    dotClass: "dot",
+    margin: 180
+  });
 });

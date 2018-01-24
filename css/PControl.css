@@ -277,15 +277,14 @@ ul {
   left: 35px;
 }
 .advantage .dot {
-    width: 7px;
-    height: 7px;
-    -webkit-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-    cursor: pointer;
-    display: inline-block;
-    border: 2px solid #87b94f;
-    background: white;
-    float: left
+  width: 7px;
+  height: 7px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+  display: inline-block;
+  background: white;
+  float: left;
   }
 .advantage .dot:nth-child(n+2) {
   margin-left: 20px;
@@ -293,6 +292,52 @@ ul {
 .advantage .dot.active {
   width: 13px;
   height: 13px;
+}
+.advantage .dot {
+  border: 2px solid #87b94f;
+}
+.promo-secondary .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 17px;
+    position: absolute;
+    left: 0;
+  }
+.promo-secondary .owl-theme .owl-nav [class*=owl-], .promo-secondary .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+.promo-secondary .owl-theme .owl-nav [class*=owl-] {
+    color: transparent;
+  }
+.promo-secondary .dot {
+  width: 7px;
+  height: 7px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  cursor: pointer;
+  display: inline-block;
+  background: white;
+  float: left;
+  }
+.promo-secondary .dot:nth-child(n+2) {
+  margin-left: 20px;
+}
+.promo-secondary .dot.active {
+  width: 13px;
+  height: 13px;
+}
+.promo-secondary .dot {
+  border: 2px solid #67509c;
+  background: transparent;
+  margin-top: 50px;
 }
 .footer {
   display: -webkit-box;

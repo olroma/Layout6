@@ -9,6 +9,45 @@
     text-align: center;
     cursor: pointer;
   }
+
+  --dot: {
+    size: 7px;
+    animation-standard: 0.15s;
+    cursor: pointer;
+    display: inline-block;
+    background: white;
+    float: left;
+    
+    &:nth-child(n+2) {
+      margin-left: 20px;
+    }
+
+    &.active {
+      size: 13px;
+    }
+  }
+
+  --arrow-next: {
+    &:after {
+      @apply --icon;
+      color: var(--green);
+      content: "\e092";
+      right: 35px;
+    }
+  }
+
+  --arrow-prev: {
+    &.disabled {
+      visibility:hidden
+    }
+
+    &:before {
+      @apply --icon;
+      color: var(--green);
+      content: "\e091";
+      left: 35px;
+    }
+  }
 }
 
 
@@ -30,42 +69,39 @@
   }
 
   .owl-next {
-    &:after {
-      @apply --icon;
-      color: var(--green);
-      content: "\e092";
-      right: 35px;
-    }
+    @apply --arrow-next;
   }
 
   .owl-prev {
-    &.disabled {
-      visibility:hidden
-    }
-
-    &:before {
-      @apply --icon;
-      color: var(--green);
-      content: "\e091";
-      left: 35px;
-    }
+    @apply --arrow-prev
   }
 
   .dot {
-    size: 7px;
-    animation-standard: 0.15s;
-    cursor: pointer;
-    display: inline-block;
+    @apply --dot;
     border: 2px solid var(--green);
-    background: white;
-    float: left;
-    
-    &:nth-child(n+2) {
-      margin-left: 20px;
-    }
+  }
+}
 
-    &.active {
-      size: 13px;
-    }
+.promo-secondary {
+  .owl-dots {
+    @apply --center;
+    height: 17px;
+    position: absolute;
+    left: 0;
+  }
+
+  .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+
+  .owl-theme .owl-nav [class*=owl-] {
+    color: transparent;
+  }
+
+  .dot {
+    @apply --dot;
+    border: 2px solid var(--purple);
+    background: transparent;
+    margin-top: 50px;
   }
 }
