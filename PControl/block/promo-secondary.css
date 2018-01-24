@@ -30,7 +30,15 @@
 
 @media (max-width: 1199px) {
   .promo-secondary {
-    background: linear-gradient(31deg, #74ebd5 0%, #acb6e5 100%);
+    background: url('../img/promo-second-quadro.png') no-repeat left, linear-gradient(31deg, #74ebd5 0%, #acb6e5 100%);
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 750px;
+    }
 
     &__mockup {
       position: initial;
@@ -41,6 +49,30 @@
     &__list {
       margin-top: 40px;
       width: initial;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .promo-secondary {
+    .container {
+      margin: 0;
+      padding: 0;
+      width: initial;
+    }
+
+    &__item {
+      p {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+      }
+    }
+
+    &__mockup {
+      display: block;
+      margin: auto;
+      width: 500px;
     }
   }
 }

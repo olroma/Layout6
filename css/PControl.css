@@ -85,7 +85,7 @@ ul {
     margin-left: 255px;
   }
 }
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
       .advantage .container > .row:nth-child(2) {
     width: 100%;
     position: static;
@@ -188,6 +188,7 @@ ul {
       .appeal_bottom .appeal__description {
         text-align: center;
       }
+      
       .appeal_bottom button {
         float: none;
         float: initial;
@@ -326,6 +327,22 @@ ul {
 .contact button {
     margin-left: 40px;
   }
+@media (max-width: 1040px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+    .contact input {
+      width: 90%;
+    }
+
+    .contact button {
+      margin-top: 25px;
+    }
+}
 .advantage .owl-carousel {
     position: static;
     position: initial;
@@ -829,6 +846,16 @@ ul {
       padding-left: 0;
     }
 }
+@media (max-width: 1000px) {
+  .owl-item.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .promo-secondary {
   height: 855px;
   margin-top: 90px;
@@ -857,8 +884,16 @@ ul {
     }
 @media (max-width: 1199px) {
   .promo-secondary {
-    background: linear-gradient(31deg, #74ebd5 0%, #acb6e5 100%);
+    background: url('../img/promo-second-quadro.png') no-repeat left, linear-gradient(31deg, #74ebd5 0%, #acb6e5 100%);
   }
+
+    .promo-secondary .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 750px;
+    }
 
     .promo-secondary__mockup {
       position: static;
@@ -871,6 +906,25 @@ ul {
       margin-top: 40px;
       width: auto;
       width: initial;
+    }
+}
+@media (max-width: 760px) {
+    .promo-secondary .container {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      width: initial;
+    }
+      .promo-secondary__item p {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 100%;
+      }
+
+    .promo-secondary__mockup {
+      display: block;
+      margin: auto;
+      width: 500px;
     }
 }
 .place {
@@ -1163,10 +1217,18 @@ ul {
 }
 @media (max-width: 991px) {
   .reviews {
-    padding: 50px 0;
     height: auto;
     height: initial;
   }
+
+    .reviews .container {
+      padding: 40px 0;
+    }
+
+      .reviews .container .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
 
     .reviews__list {
       -webkit-box-orient: vertical;
