@@ -44,3 +44,11 @@
     }
   }
 }
+
+@media (max-width: 710px) {
+  .promo-secondary {
+    &__mockup {
+      width: 500px;
+    }
+  }
+}

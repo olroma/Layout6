@@ -197,3 +197,19 @@
     }
   }
 }
+
+@media (max-width: 720px) {
+  .promo {
+    &__info-place {
+      grid-template-columns: 430px;
+    }
+
+    &__white-place {
+      width: 430px;
+    }
+  }
+
+  .info {
+    width: 430px;
+  }
+}

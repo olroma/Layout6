@@ -188,6 +188,7 @@ ul {
       .appeal_bottom .appeal__description {
         text-align: center;
       }
+      
       .appeal_bottom button {
         float: none;
         float: initial;
@@ -873,6 +874,11 @@ ul {
       width: initial;
     }
 }
+@media (max-width: 710px) {
+    .promo-secondary__mockup {
+      width: 500px;
+    }
+}
 .place {
   position: relative;
 }
@@ -1103,6 +1109,19 @@ ul {
     grid-row: 3;
     margin: 0;
     margin-top: 10px;
+  }
+}
+@media (max-width: 720px) {
+    .promo__info-place {
+      grid-template-columns: 430px;
+    }
+
+    .promo__white-place {
+      width: 430px;
+    }
+
+  .info {
+    width: 430px;
   }
 }
 .reviews {
