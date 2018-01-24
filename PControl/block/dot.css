@@ -147,3 +147,13 @@
     }
   }
 }
+
+@media (max-width: 1299px) {
+  .product {
+    .owl-next {
+      &:after {
+        right: 0;
+      }
+    }
+  }
+}

@@ -28,3 +28,18 @@
     }
   }
 }
+
+@media (max-width: 1260px) {
+  .common {
+    &__description {
+      padding-left: 0;
+      margin-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .common {
+    margin-top: 900px;
+  }
+}

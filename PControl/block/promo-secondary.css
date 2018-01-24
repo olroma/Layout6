@@ -27,3 +27,20 @@
     }
   }
 }
+
+@media (max-width: 1199px) {
+  .promo-secondary {
+    background: linear-gradient(31deg, #74ebd5 0%, #acb6e5 100%);
+
+    &__mockup {
+      position: initial;
+      right: 0;
+      width: 700px;
+    }
+
+    &__list {
+      margin-top: 40px;
+      width: initial;
+    }
+  }
+}

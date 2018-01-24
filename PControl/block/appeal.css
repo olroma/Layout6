@@ -72,3 +72,73 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 1119px) {
+  .appeal {
+    margin-top: 100px;
+
+    &__description {
+      margin-top: 50px;
+      padding-left: 0;
+
+      &-item {
+        margin-top: 15px;
+      }
+    }
+
+    &__list {
+      img {
+        margin-top: 30px;
+      }
+    }
+
+    &__item {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .appeal {
+    &__item {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &__text {
+      display: block;
+    }
+
+    &_bottom {
+      .appeal__description {
+        text-align: center;
+      }
+      
+      button {
+        float: initial;
+        margin-top: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .appeal {
+    &__item {
+      &:last-child {
+        margin-right: 25px;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        margin-top: 20px;
+      }
+    }
+  }
+}

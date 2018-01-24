@@ -29,9 +29,18 @@
     display: flex !important;
 
     li {
+      size: 164px;
       &:nth-child(n+2) {
         margin-left: 70px;
       }
+    }
+  }
+}
+
+@media (max-width: 1299px) {
+  .product {
+    &__description {
+      padding-left: 0;
     }
   }
 }

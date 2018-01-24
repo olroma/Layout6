@@ -47,3 +47,32 @@
     margin-left: 65px;
   }
 }
+
+@media (max-width: 1199px) {
+  .reviews {
+    &__description {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .reviews {
+    padding: 50px 0;
+    height: initial;
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        height: 350px;
+
+        &:nth-child(n+2) {
+          margin: 0;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
