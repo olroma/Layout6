@@ -1,5 +1,6 @@
 .button {
   @apply --disableOutline;
+  animation-standard: 0.35s;
   size: 215px 60px;
   border: 0;
   border-radius: 30px;
@@ -9,4 +10,13 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+
+  &:active {
+    box-shadow: 3px 2px 7px rgba(114, 122, 161, 0.1);
+  }
+
+  &:hover {
+    color: white;
+    background-color: var(--primary);
+  }
 }

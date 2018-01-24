@@ -143,6 +143,8 @@ ul {
   outline: none;
 }
 .button {
+  -webkit-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
   width: 215px;
   height: 60px;
   border: 0;
@@ -154,6 +156,14 @@ ul {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+}
+.button:active {
+  -webkit-box-shadow: 3px 2px 7px rgba(114, 122, 161, .1);
+          box-shadow: 3px 2px 7px rgba(114, 122, 161, .1);
+}
+.button:hover {
+  color: white;
+  background-color: #65a9df;
 }
 .common {
   margin-top: 320px;
