@@ -10,4 +10,11 @@ $(document).ready(function(){
     dotClass: "dot",
     margin: 180
   });
+
+  $('.product__slider').owlCarousel({
+    items: 4,
+    nav: true,
+    dots: false,
+    margin: 60
+  });
 });

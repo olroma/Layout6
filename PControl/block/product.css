@@ -22,11 +22,11 @@
   }
 
   &__description {
-    padding-left: 180px;
+    padding-left: 100px;
   }
 
   &__list {
-    display: flex;
+    display: flex !important;
 
     li {
       &:nth-child(n+2) {

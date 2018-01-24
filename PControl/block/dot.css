@@ -105,3 +105,45 @@
     margin-top: 50px;
   }
 }
+
+.product {
+  .owl-carousel {
+    position: initial;
+  }
+
+  .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+
+  .owl-nav {
+    width: 0;
+  }
+
+  .owl-next {
+    @apply --arrow-next;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: transparent !important;
+
+    &:after {
+      right: -40px;
+    }
+
+    &.disable {
+      width: 0 !important;
+    }
+  }
+
+  .owl-prev {
+    @apply --arrow-prev;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: transparent !important;
+
+    &.disable {
+      width: 0 !important;
+    }
+  }
+}
