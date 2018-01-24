@@ -16,6 +16,12 @@
     transform: translateX(-50%);
     padding: 0;
   }
+
+  &__shape {
+    position: absolute;
+    right: -35px;
+    z-index: -1;
+  }
 }
 
 .promo {

@@ -1,5 +1,22 @@
 .appeal {
+  position: relative;
   margin-top: 455px;
+
+  &__shape {
+    &-left, &-right {
+      position: absolute;
+    }
+
+    &-left {
+      bottom: 80px;
+      left: 0;
+    }
+
+    &-right {
+      top: -80px;
+      right: 0;
+    }
+  }
 
   .container__title {
     &::after {

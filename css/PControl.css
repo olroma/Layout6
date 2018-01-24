@@ -80,8 +80,20 @@ ul {
   opacity: 0.3;
 }
 .appeal {
+  position: relative;
   margin-top: 455px;
 }
+.appeal__shape-left, .appeal__shape-right {
+      position: absolute;
+    }
+.appeal__shape-left {
+      bottom: 80px;
+      left: 0;
+    }
+.appeal__shape-right {
+      top: -80px;
+      right: 0;
+    }
 .appeal .container__title::after {
   background: #65a9df;
 }
@@ -700,6 +712,11 @@ ul {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     padding: 0;
+  }
+.place__shape {
+    position: absolute;
+    right: -35px;
+    z-index: -1;
   }
 .promo {
   height: 435px;
