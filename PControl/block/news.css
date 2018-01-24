@@ -28,13 +28,13 @@
 
     span {
       display: block;
-      font-weight: bold;
       z-index: 1;
       position: relative;
 
       &:nth-child(1) {
         @apply --underline;
         font-size: 30px;
+        font-weight: bold;
         
         &:after {
           bottom: -10px;
@@ -79,8 +79,12 @@
   }
 }
 
+.img-row-fix {
+  height: 100%;
+}
+
 .news {
-  margin-top: 80px;
+  margin-top: 180px;
 
   .container__title {
     &::after {
@@ -90,6 +94,7 @@
 
   &__table {
     display: flex;
+    margin-top: 15px;
 
     &-left, &-right {
       display: grid;
