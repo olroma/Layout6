@@ -57,6 +57,7 @@ ul {
 }
 .advantage__description {
     width: 625px;
+    margin-top: 30px;
   }
 .advantage__list {
     font-size: 20px;
@@ -218,6 +219,81 @@ ul {
 .contact button {
     margin-left: 40px;
   }
+.advantage .owl-carousel {
+    position: static;
+    position: initial;
+  }
+.advantage .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+    height: 17px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+.advantage .owl-theme .owl-nav [class*=owl-], .advantage .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+.advantage .owl-next:after {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  position: absolute;
+  top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  font-family: "Icon";
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #87b94f;
+  content: "\e092";
+  right: 35px;
+}
+.advantage .owl-prev.disabled {
+  visibility:hidden;
+}
+.advantage .owl-prev:before {
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  position: absolute;
+  top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  font-family: "Icon";
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #87b94f;
+  content: "\e091";
+  left: 35px;
+}
+.advantage .dot {
+    width: 7px;
+    height: 7px;
+    -webkit-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #87b94f;
+    background: white;
+    float: left
+  }
+.advantage .dot:nth-child(n+2) {
+  margin-left: 20px;
+}
+.advantage .dot.active {
+  width: 13px;
+  height: 13px;
+}
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

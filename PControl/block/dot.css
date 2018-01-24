@@ -1,0 +1,71 @@
+:root {
+  --icon: {
+    animation-standard: 0.15s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Icon";
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+
+.advantage {
+  .owl-carousel {
+    position: initial;
+  }
+
+  .owl-dots {
+    @apply --center;
+    height: 17px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .owl-theme .owl-nav [class*=owl-], .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+  }
+
+  .owl-next {
+    &:after {
+      @apply --icon;
+      color: var(--green);
+      content: "\e092";
+      right: 35px;
+    }
+  }
+
+  .owl-prev {
+    &.disabled {
+      visibility:hidden
+    }
+
+    &:before {
+      @apply --icon;
+      color: var(--green);
+      content: "\e091";
+      left: 35px;
+    }
+  }
+
+  .dot {
+    size: 7px;
+    animation-standard: 0.15s;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid var(--green);
+    background: white;
+    float: left;
+    
+    &:nth-child(n+2) {
+      margin-left: 20px;
+    }
+
+    &.active {
+      size: 13px;
+    }
+  }
+}

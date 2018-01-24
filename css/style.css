@@ -1,5 +1,10 @@
 @import 'PControl.css';
 
+@font-face {
+	font-family: "Icon";
+	src: url("/bootstrap/fonts/glyphicons-halflings-regular.ttf");
+}
+
 html, body {
   min-width: 320px;
   background: #F0F4F7;

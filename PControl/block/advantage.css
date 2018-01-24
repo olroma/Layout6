@@ -28,6 +28,7 @@
 
   &__description {
     width: 625px;
+    margin-top: 30px;
   }
 
   &__list {
