@@ -125,6 +125,10 @@ ul {
       }
 }
 @media (max-width: 400px) {
+    .advantage__list {
+      margin-left: 0;
+    }
+    
     .advantage .item {
       padding-left: 30px;
     }

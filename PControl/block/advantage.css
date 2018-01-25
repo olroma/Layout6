@@ -130,6 +130,10 @@
 
 @media (max-width: 400px) {
   .advantage {
+    &__list {
+      margin-left: 0;
+    }
+    
     .item {
       padding-left: 30px;
     }
