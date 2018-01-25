@@ -44,3 +44,12 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .owl-item {
+    &.active {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
