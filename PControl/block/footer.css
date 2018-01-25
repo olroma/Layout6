@@ -42,3 +42,22 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .footer {
+    height: auto;
+    padding: 50px 0;
+
+    .container {
+      margin-left: 10px;
+    }
+
+    &__middle {
+      margin-top: 25px;
+    }
+
+    &__contact {
+      margin-top: 5px;
+    }
+  }
+}

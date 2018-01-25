@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .appeal {
     margin-top: 100px;
 
@@ -119,6 +119,7 @@
       button {
         float: initial;
         margin-top: 25px;
+        margin-right: 0;
       }
     }
   }
@@ -126,10 +127,8 @@
 
 @media (max-width: 880px) {
   .appeal {
-    &__item {
-      &:last-child {
-        margin-right: 25px;
-      }
+    &__description-item {
+      width: initial;
     }
 
     &__list {
@@ -138,6 +137,27 @@
 
       li {
         margin-top: 20px;
+        margin-right: 0;
+      }
+    }
+
+    &__item {
+      &::last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .appeal {
+    &__shape {
+      &-left {
+        display: none;
+      }
+
+      &-right {
+        display: none;
       }
     }
   }

@@ -109,9 +109,25 @@ ul {
       }
 }
 @media (max-width: 600px) {
-      .advantage__list li {
-        width: 300px;
+    .advantage__description {
+      overflow: hidden;
+      margin-top: 0;
+    }
+      .advantage .container > .row:nth-child(2) {
+    height: 350px;
+  }
+      .advantage__list-header {
+        margin-left: 10px;
       }
+
+      .advantage__list li {
+        width: 260px;
+      }
+}
+@media (max-width: 400px) {
+    .advantage .item {
+      padding-left: 30px;
+    }
 }
 .appeal {
   position: relative;
@@ -173,7 +189,7 @@ ul {
     font-size: 30px;
     font-weight: bold;
   }
-@media (max-width: 1119px) {
+@media (max-width: 1199px) {
   .appeal {
     margin-top: 100px;
   }
@@ -211,12 +227,14 @@ ul {
         float: none;
         float: initial;
         margin-top: 25px;
+        margin-right: 0;
       }
 }
 @media (max-width: 880px) {
-    .appeal__item:last-child {
-    margin-right: 25px;
-  }
+    .appeal__description-item {
+      width: auto;
+      width: initial;
+    }
 
     .appeal__list {
       -webkit-box-orient: vertical;
@@ -230,6 +248,20 @@ ul {
 
       .appeal__list li {
         margin-top: 20px;
+        margin-right: 0;
+      }
+
+    .appeal__item::last-child {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 550px) {
+      .appeal__shape-left {
+        display: none;
+      }
+
+      .appeal__shape-right {
+        display: none;
       }
 }
 .button:focus {
@@ -289,6 +321,11 @@ ul {
 @media (max-width: 1020px) {
   .common {
     margin-top: 900px;
+  }
+}
+@media (max-width: 450px) {
+  .common {
+    margin-top: 100px;
   }
 }
 .contact {
@@ -358,8 +395,26 @@ ul {
     }
 
     .contact button {
+      margin-left: 0;
       margin-top: 25px;
     }
+}
+@media (max-width: 550px) {
+    .contact__input {
+      font-size: 20px
+    }
+    .contact__input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+    .contact__input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+    .contact__input::-ms-input-placeholder {
+    font-size: 20px;
+  }
+    .contact__input::placeholder {
+    font-size: 20px;
+  }
 }
 .advantage .owl-carousel {
     position: static;
@@ -591,6 +646,24 @@ ul {
       color: #65a9df;
       font-weight: bold;
     }
+@media (max-width: 991px) {
+  .footer {
+    height: auto;
+    padding: 50px 0;
+  }
+
+    .footer .container {
+      margin-left: 10px;
+    }
+
+    .footer__middle {
+      margin-top: 25px;
+    }
+
+    .footer__contact {
+      margin-top: 5px;
+    }
+}
 .header {
   background: white;
   height: 72px;
@@ -608,6 +681,16 @@ ul {
     line-height: 72px;
     margin-right: 80px;
   }
+@media (max-width: 500px) {
+    .header__logo {
+      margin-left: 10px;
+    }
+}
+@media (max-width: 450px) {
+  .header {
+    height: auto;
+  }
+}
 .img-row-fix {
   height: 100%;
 }
@@ -1004,6 +1087,16 @@ ul {
       width: 80%;
     }
 }
+@media (max-width: 500px) {
+    .promo-secondary__mockup {
+      margin-top: 100px;
+    }
+}
+@media (max-width: 400px) {
+        .promo-secondary > .row .container .row {
+          width: 320px;
+        }
+}
 .place {
   position: relative;
 }
@@ -1236,6 +1329,11 @@ ul {
     margin-top: 10px;
   }
 }
+@media (max-width: 800px) {
+    .place__shape {
+      display: none;
+    }
+}
 @media (max-width: 720px) {
     .promo__info-place {
       grid-template-columns: 430px;
@@ -1250,8 +1348,55 @@ ul {
   }
 }
 @media (max-width: 650px) {
-    .promo__title {
+    .promo__title, .promo__description {
       text-align: center;
+      font-size: 20px;
+    }
+
+    .promo__info-place {
+      grid-template-columns: 310px;
+    }
+
+    .promo__white-place {
+      width: 310px;
+    }
+        .promo__white-place .place__title {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+
+      .promo__white-place .place__describe {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 25px;
+      }
+
+  .info {
+    width: 310px;
+  }
+}
+@media (max-width: 580px) {
+    .promo__title {
+      margin-top: 150px;
+    }
+}
+@media (max-width: 400px) {
+    .header__sign {
+      margin-right: 25px;
+    }
+}
+@media (max-width: 450px) {
+  .place {
+    margin-top: 25px;
+  }
+
+    .place > div {
+      position: static;
+      position: initial;
+      -webkit-transform: none;
+              transform: none;
+      -webkit-transform: initial;
+              transform: initial;
     }
 }
 .reviews {

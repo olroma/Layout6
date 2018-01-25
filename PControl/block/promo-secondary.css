@@ -77,3 +77,23 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .promo-secondary {
+    &__mockup {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .promo-secondary {
+    > .row {
+      .container {
+        .row {
+          width: 320px;
+        }
+      }
+    }
+  }
+}

@@ -103,10 +103,35 @@
 
 @media (max-width: 600px) {
   .advantage {
-    &__list {
-      li {
-        width: 300px;
+    &__description {
+      overflow: hidden;
+      margin-top: 0;
+    }
+
+    .container {
+      > .row {
+        &:nth-child(2) {
+          height: 350px;
+        }
       }
+    }
+
+    &__list {
+      &-header {
+        margin-left: 10px;
+      }
+
+      li {
+        width: 260px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .advantage {
+    .item {
+      padding-left: 30px;
     }
   }
 }
