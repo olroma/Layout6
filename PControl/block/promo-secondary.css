@@ -55,6 +55,7 @@
 
 @media (max-width: 760px) {
   .promo-secondary {
+    height: initial;
     .container {
       margin: 0;
       padding: 0;
@@ -72,7 +73,7 @@
     &__mockup {
       display: block;
       margin: auto;
-      width: 500px;
+      width: 80%;
     }
   }
 }

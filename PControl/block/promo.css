@@ -213,3 +213,11 @@
     width: 430px;
   }
 }
+
+@media (max-width: 650px) {
+  .promo {
+    &__title {
+      text-align: center;
+    }
+  }
+}

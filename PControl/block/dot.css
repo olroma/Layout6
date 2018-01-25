@@ -157,3 +157,11 @@
     }
   }
 }
+
+@media (max-width: 760px) {
+  .promo-secondary {
+    .owl-dots {
+      padding-left: 25px;
+    }
+  }
+}

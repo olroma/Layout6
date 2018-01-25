@@ -84,3 +84,31 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .reviews {
+    &__list {
+      margin-top: 60px;
+    }
+
+    &__item {
+      width: 95% !important;
+      height: auto !important;
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      &-item {
+        font-size: 16px;
+      }
+    }
+
+    &__description {
+      &-item {
+        width: 90%;
+        font-size: 16px;
+        margin-left: 0;
+      }
+    }
+  }
+}
